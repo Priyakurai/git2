@@ -50,6 +50,7 @@ public class NeostoxUtility {
 		
 		
 	}
+	
 	public static String ExcelGeneralM1(String str,int r,int c) throws EncryptedDocumentException, IOException {
 		File myfile=new File("C:\\9jully\\selenium\\9jullyc.xlsx");
 	
@@ -59,6 +60,13 @@ public class NeostoxUtility {
 
 		
 	}
+	public static String ExcelGeneralM1(String str,int r,int p) throws EncryptedDocumentException, IOException {
+		File myfile=new File("C:\\9jully\\selenium\\9jullyc.xlsx");
+	
+		String value=WorkbookFactory.create(myfile).getSheet("Sheet3").getRow(r).getCell(c).getStringCellValue();
+		System.out.println(value);
+         return value;
+
 	public static Object readPropertyFi(String string) {
 	
 		return null;
